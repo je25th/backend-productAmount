@@ -1,10 +1,13 @@
 package dcode.repository;
 
 import dcode.domain.entity.Product;
+import dcode.domain.entity.Promotion;
 import lombok.RequiredArgsConstructor;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
+
+import java.util.Date;
 
 @RequiredArgsConstructor
 @Repository
@@ -27,4 +30,5 @@ public class ProductRepository {
                         .build()
         );
     }
+
 }
